@@ -1,0 +1,137 @@
+.contact {
+    .contactContainer {
+        display: grid;
+        gap: 5em;
+    }
+
+    .contactInfo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: var(--font1);
+
+        a {
+            text-decoration: none;
+            transition: all 0.2s ease-in-out;
+            color: var(--color2);
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        span {
+            display: none;
+        }
+    }
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #000;
+        line-height: 0.1em;
+        margin: 1em 0;
+
+        span {
+            background: var(--color1);
+            padding: 0 1em;
+        }
+    }
+
+    .form {
+        input,
+        textarea {
+            width: 100%;
+            padding: 1em;
+            border-radius: 0.3em;
+            font-size: var(--font3);
+            border: none;
+            margin-bottom: 1em;
+            resize: none;
+            box-shadow: 1px 1px 3px hsla(0, 0%, 0%, 0.38);
+        }
+
+        ::placeholder {
+            letter-spacing: 0.15em;
+        }
+
+        .btn {
+            padding: 0.7em 2em;
+            margin-top: 1.2em;
+
+            &:hover,
+            &:focus {
+                .sendIcon {
+                    transform: translate(13px, -3px);
+                }
+            }
+        }
+
+        .sendIcon {
+            transform: translateX(8px);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+
+    .modal {
+        width: 85%;
+        max-width: 43em;
+        border: none;
+        position: fixed;
+        padding: 4em;
+        margin: auto;
+        background-color: var(--color1);
+        line-height: 4em;
+
+        &::backdrop {
+            background: rgba(23, 23, 23, 0.357);
+        }
+
+        .modalContainer {
+            display: grid;
+            gap: 4em;
+        }
+
+        h3 {
+            font-size: var(--font3);
+        }
+    }
+}
+
+@media (min-width: 662px) {
+    .contact {
+        .contactContainer {
+            grid-template-columns: 50% 40%;
+            gap: 10%;
+        }
+
+        .contactInfo {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            a {
+                margin-top: 1.5em;
+                font-size: 1.3em;
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            span {
+                display: inline-block;
+                font-size: 0.4em;
+                line-height: 2em;
+                margin-left: 2em;
+            }
+        }
+
+        h2 {
+            display: none;
+        }
+
+        .form {
+            order: -1;
+        }
+    }
+}

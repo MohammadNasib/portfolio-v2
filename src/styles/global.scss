@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+:root {
+    // --color1: white;
+    --color1: hsl(26, 30%, 95%);
+    --color2: hsl(211.6, 57.6%, 6.5%);
+    --color3: #0490c8;
+    --color4: #1fa3d4;
+    --maxWidth: 100em;
+    --font1: clamp(2.75em, 4vw + 1em, 4rem);
+    --font2: clamp(2em, 2.2vw + 1em, 3rem);
+    --font3: clamp(1.57em, 1.7vw + 1em, 2.2rem);
+    --font4: calc(1.3vw + 1em);
+    --gradient: linear-gradient(
+        180deg,
+        hsla(0, 33%, 96%, 0.024) 47%,
+        hsla(211.6, 57.6%, 6.5%, 0.65)
+    );
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    background-color: var(--color1);
+    scroll-padding-top: var(--scrollPadding, 100px);
+}
+
+html,
+input,
+textarea,
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 662px) {
+    :root {
+        --font1: 3em;
+        --font2: 2em;
+        --font3: 1.7em;
+        --font4: 1.58em;
+    }
+
+    html {
+        font-size: 62%;
+    }
+}
+@media (min-width: 950px) {
+    html {
+        font-size: 78%;
+    }
+}
+
+*,
+*::before,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// global
+.pointer {
+    cursor: pointer;
+}
+
+.btn {
+    font-size: var(--font2);
+    background-color: var(--color1);
+    border: 1px solid;
+    padding: 0.8em 1em;
+    flex-grow: 1;
+    transition: all ease-in-out 0.2s;
+
+    a {
+        text-decoration: none;
+        color: var(--color2);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--color2);
+        color: var(--color1);
+
+        a {
+            color: var(--color1);
+        }
+    }
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+
+.fa {
+    transform: translate(5px, 3px);
+    transition: all 0.3s ease-in-out;
+}
+
+.sectionTitle {
+    font-size: var(--font1);
+    margin-bottom: 2.1em;
+}
+
+.name {
+    font-size: var(--font1);
+    margin: 0.5em 0;
+    color: var(--color2);
+    letter-spacing: 0.147em;
+}
+
+.para {
+    font-size: var(--font3);
+    margin-top: 2em;
+    letter-spacing: 0.2em;
+    line-height: 2em;
+
+    a {
+        text-decoration: none;
+        font-weight: 400;
+        color: var(--color2);
+        border-bottom: 1px solid;
+    }
+}
+
+.button {
+    font-size: calc(var(--font3) - 0.4em);
+}
+
+// used in js
+
+.right {
+    right: 0 !important;
+}
+.bgWhite {
+    height: 45% !important;
+
+    .top,
+    .bottom {
+        background-color: var(--color1) !important;
+    }
+
+    .top {
+        transform: rotate(-45deg) translate(-6px, 9px);
+    }
+
+    .bottom {
+        transform: rotate(45deg) translate(-6px, -10px);
+    }
+}
+
+// main styles
+main {
+    display: grid;
+    gap: 11em;
+    padding: 0 2em 10em;
+    background-color: var(--color1);
+    letter-spacing: 3px;
+}
+
+@media (min-width: 662px) {
+    .sectionTitle {
+        text-align: center;
+    }
+}
+
+@media (min-width: 950px) {
+    main {
+        max-width: var(--maxWidth);
+        margin: auto;
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "projects": [
+        {
+            "link": "https://todoapp-2022.netlify.app/",
+            "bg": "ss-crud.PNG",
+            "name": "CRUD Application"
+        },
+        {
+            "link": "https://space-tour-2022.netlify.app/",
+            "bg": "space.jpg",
+            "name": "Single Page Application"
+        },
+        {
+            "link": "https://blogrnasib.netlify.app/",
+            "bg": "blogr.jpg",
+            "name": "Landing Page"
+        },
+
+        {
+            "link": "https://project-quiz.netlify.app/",
+            "bg": "ss-quiz.PNG",
+            "name": "QUIZ Application"
+        },
+        {
+            "link": "https://huddle-pro.netlify.app/",
+            "bg": "ss-huddle.PNG",
+            "name": "Landing Page"
+        },
+        {
+            "link": "https://weatherstatus.netlify.app/",
+            "bg": "weatherstatus.png",
+            "name": "Weather Status Application"
+        }
+    ]
+}

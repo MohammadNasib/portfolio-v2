@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAEEMUL ABRAR NASIB's Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <main>
+        <nav class="navBar">
+            <a class="logo" href="#">
+                <img class="pointer" src="./imges/logo-2.svg" alt="NA" />
+            </a>
+
+            <div class="menu" data-menu="menu">
+                <div class="navLinks">
+                    <a class="fw-300" href="#">Home</a>
+                    <a class="fw-300" href="#project">Projects</a>
+                    <a class="fw-300" href="#about">About</a>
+                    <a class="fw-300" href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="navIcon pointer" data-navIcon="navIcon">
+                <div class="top"></div>
+                <div class="bottom"></div>
+            </div>
+        </nav>
+
+        <section class="home" id="home">
+            <div class="img">
+                <img href="#home" src="./imges/mypic.png" alt="NASIB'B IMAGE" width="100%" />
+            </div>
+            <div class="context">
+                <div class="texts">
+                    <h1 class="name fw-500">MOHAMMAD NASIB</h1>
+                    <h3 class="fw-500">FRONT-END DEVELOPER</h3>
+                    <p class="para fw-300">
+                        A self-taught developer who loves to build interactive and elegant websites.
+                    </p>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn pointer" onclick="navigateTo('#project')">
+                        My Projects
+                    </button>
+
+                    <button class="btn pointer" onclick="navigateTo('#about')">
+                        More About Me
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="project" id="project">
+            <h1 class="sectionTitle">Projects</h1>
+
+            <div class="projectContainer">
+                <a
+                    class="projectBox"
+                    href="https://todoapp-2022.netlify.app/"
+                    target="_blank"
+                    style="background-image: url('./imges/ss-crud.PNG')"
+                >
+                    <div class="projectInfo">
+                        <h2 class="fw-500">CRUD Application</h2>
+
+                        <div class="button fw-400">
+                            Lets have a look
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    class="projectBox"
+                    href="https://space-tour-2022.netlify.app/"
+                    target="_blank"
+                    style="background-image: url('./imges/space.jpg')"
+                >
+                    <div class="projectInfo">
+                        <h2 class="fw-500">Single Page Application</h2>
+
+                        <div class="button fw-400">
+                            Lets have a look
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    class="projectBox"
+                    href="https://blogrnasib.netlify.app/"
+                    target="_blank"
+                    style="background-image: url('./imges/blogr.jpg')"
+                >
+                    <div class="projectInfo">
+                        <h2 class="fw-500">Landing Page</h2>
+
+                        <div class="button fw-400">
+                            Lets have a look
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    class="projectBox"
+                    href="https://project-quiz.netlify.app/"
+                    target="_blank"
+                    style="background-image: url('./imges/ss-quiz.PNG')"
+                >
+                    <div class="projectInfo">
+                        <h2 class="fw-500">QUIZ Application</h2>
+
+                        <div class="button fw-400">
+                            Lets have a look
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    class="projectBox"
+                    href="https://huddle-pro.netlify.app/"
+                    target="_blank"
+                    style="background-image: url('./imges/ss-huddle.PNG')"
+                >
+                    <div class="projectInfo">
+                        <h2 class="fw-500">Landing Page</h2>
+
+                        <div class="button fw-400">
+                            Lets have a look
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    class="projectBox"
+                    href="https://weatherstatus.netlify.app/"
+                    target="_blank"
+                    style="background-image: url('./imges/weatherstatus.png')"
+                >
+                    <div class="projectInfo">
+                        <h2 class="fw-500">Weather Status Application</h2>
+
+                        <div class="button fw-400">
+                            Lets have a look
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h1 class="sectionTitle">About</h1>
+            <div class="aboutContainer">
+                <div class="info">
+                    <h3 class="fw-500">Hi There , This is</h3>
+
+                    <h1 class="name fw-500">Mohammad Naeemul Abrar Nasib</h1>
+
+                    <p class="para fw-300">
+                        I like to call my self a Front-end-developer. I mostly work in React JS.
+                        Starting in 2021, I have learnt basic and advance topics of web-development
+                        and completed a couple of projects. Now I am looking for an opportunity to
+                        make myself experienced in real world projects. And here is my
+                        <a
+                            href="https://drive.google.com/file/d/1p8kVJKyIu89hLgdqEN2yOwKNGl2qWXGM/view?usp=sharing"
+                            target="_blank"
+                        >
+                            resume</a
+                        >.
+                    </p>
+
+                    <a href="#skills" class="skillBtn">
+                        I'm skilled in ..<i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="skills" id="skills">
+                    <span class="fw-500"><i class="fa-brands fa-html5"></i> HTML</span>
+
+                    <span class="fw-500"><i class="fa-brands fa-css3"></i> CSS</span>
+
+                    <span><i class="fa-brands fa-bootstrap"></i> Bootstap</span>
+
+                    <span class="fw-500"><i class="fa-brands fa-sass"></i> SASS</span>
+
+                    <span class="fw-500"><i class="fa-brands fa-js"></i> JAVASCRIPT</span>
+
+                    <span class="fw-500"><i class="fa-brands fa-react"></i> REACT</span>
+
+                    <span class="fw-500"><i class="fa-brands fa-python"></i> PYTHON</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h1 class="sectionTitle">Let's Talk</h1>
+            <div class="contactContainer">
+                <div class="contactInfo">
+                    <a href="https://www.facebook.com/naeemulabrar.nasiv" target="_blank">
+                        <i class="fa-brands fa-facebook-f">
+                            <span>Mohammad Naeemul Abrar Nasib</span>
+                        </i>
+                    </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/mohammad-naeemul-abrar-nasib-29313018b"
+                        target="_blank"
+                    >
+                        <i class="fa-brands fa-linkedin-in">
+                            <span>Mohammad Naeemul Abrar Nasib</span>
+                        </i>
+                    </a>
+
+                    <a href="mailto:mohammadnasib111@gmail.com" target="_self">
+                        <i class="fa-solid fa-envelope">
+                            <span> mohammadnasib111@gmail.com </span>
+                        </i>
+                    </a>
+                </div>
+
+                <h2><span>or</span></h2>
+
+                <div class="form">
+                    <form action="#" data-form="form">
+                        <input type="text" data-name="name" placeholder="Your name" required />
+
+                        <input type="text" data-email="email" placeholder="Your email" required />
+
+                        <textarea
+                            name="message"
+                            data-message="message"
+                            cols="30"
+                            rows="10"
+                            placeholder="Your message"
+                            required
+                            aria-expanded="false"
+                        ></textarea>
+
+                        <button class="btn pointer" type="submit">
+                            Send
+
+                            <i class="sendIcon fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <dialog class="modal" id="modal">
+                    <div class="modalContainer">
+                        <h3 class="fw-400">
+                            Sorry ! Server is not responding. Please use another way to contact.
+                        </h3>
+
+                        <button class="btn pointer" onclick="closeModal()">Close</button>
+                    </div>
+                </dialog>
+            </div>
+        </section>
+    </main>
+</body>

@@ -1,0 +1,76 @@
+.about {
+    .aboutContainer {
+        display: grid;
+        gap: 8em;
+    }
+
+    .info {
+        h3 {
+            font-size: var(--font2);
+            letter-spacing: 0.4em;
+            opacity: 0.85;
+            margin-bottom: 0.5em;
+        }
+
+        .skillBtn {
+            font-size: var(--font3);
+            text-decoration: none;
+            color: var(--color2);
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 1.7em;
+
+            &:hover,
+            &:focus {
+                .fa {
+                    transform: translate(13px, 3px) !important ;
+                }
+            }
+        }
+    }
+
+    .skills {
+        color: var(--color1);
+        padding: 2em;
+        display: flex;
+        gap: 1.3em;
+        flex-wrap: wrap;
+        text-align: center;
+        border-radius: 0.7em;
+        transition: all 0.3s ease-in-out;
+
+        &:target {
+            box-shadow: 1px 1px 3px hsla(0, 0%, 0%, 0.44);
+        }
+
+        span {
+            color: var(--color2);
+            font-size: var(--font3);
+            padding: 1em;
+            border-radius: 0.2em;
+            flex-grow: 1;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media (min-width: 662px) {
+    .about {
+        .aboutContainer {
+            grid-template-columns: 67% 30%;
+            gap: 3%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .skills {
+            span {
+                padding: 0.5em 0;
+            }
+        }
+    }
+}
