@@ -57,7 +57,7 @@ export default function About() {
                         and completed a couple of projects. Now I am looking for an opportunity to
                         make myself experienced in real world projects. And here is my{' '}
                         <a
-                            href='https://drive.google.com/file/d/1p8kVJKyIu89hLgdqEN2yOwKNGl2qWXGM/view?usp=sharing'
+                            href='https://drive.google.com/file/d/1ITmPHlDYMUWOmGrLnG4VPw9cBg8EvlZ6/view?usp=sharing'
                             target='_blank'
                             rel='noopener noreferrer'
                         >
